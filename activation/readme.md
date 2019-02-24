@@ -1,217 +1,135 @@
-# Enduro
-| Optimizer  | tf.nn.relu |
-|----| tf.nn.relu6 |
-|----| tf.nn.crelu |
-|----| tf.nn.elu |
-|----| tf.nn.selu |
-|----| tf.nn.softplus |
-|----| tf.nn.softsign |
-|----| tf.sigmoid |
-|----| tf.tanh |
-|----|--|
---|
---|
---|
---|
---|
---|
---|
---|
-| AdadeltaOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| AdagradOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| AdamOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| FtrlOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| GradientDescentOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| MomentumOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| ProximalAdagradOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| ProximalGradientDescentOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| RMSPropOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| AdaMaxOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| AdamGSOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| AdamWOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| AddSignOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| GGTOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| LARSOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| LazyAdamGSOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| LazyAdamOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| MomentumWOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| NadamOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| PowerSignOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| RegAdagradOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
-| ShampooOptimizer | :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
- :white_check_mark: |
+# BipedalWalkerHardcore-v2
+| Optimizer  | tf.nn.relu | tf.nn.relu6 | tf.nn.crelu | tf.nn.elu | tf.nn.selu | tf.nn.softplus | tf.nn.softsign | tf.sigmoid | tf.tanh |
+|----|--|--|--|--|--|--|--|--|--|
+| AdadeltaOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| FtrlOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalGradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RMSPropOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdaMaxOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AddSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GGTOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LARSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| NadamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| PowerSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RegAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ShampooOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+
+
+# LunarLanderContinuous-v2
+| Optimizer  | tf.nn.relu | tf.nn.relu6 | tf.nn.crelu | tf.nn.elu | tf.nn.selu | tf.nn.softplus | tf.nn.softsign | tf.sigmoid | tf.tanh |
+|----|--|--|--|--|--|--|--|--|--|
+| AdadeltaOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| FtrlOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalGradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RMSPropOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdaMaxOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AddSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GGTOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LARSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| NadamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| PowerSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RegAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ShampooOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+
+
+# MontezumaRevenge-ram-v0
+| Optimizer  | tf.nn.relu | tf.nn.relu6 | tf.nn.crelu | tf.nn.elu | tf.nn.selu | tf.nn.softplus | tf.nn.softsign | tf.sigmoid | tf.tanh |
+|----|--|--|--|--|--|--|--|--|--|
+| AdadeltaOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| FtrlOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalGradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RMSPropOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdaMaxOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AddSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GGTOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LARSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| NadamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| PowerSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RegAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ShampooOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+
+
+# Enduro-ram-v0
+| Optimizer  | tf.nn.relu | tf.nn.relu6 | tf.nn.crelu | tf.nn.elu | tf.nn.selu | tf.nn.softplus | tf.nn.softsign | tf.sigmoid | tf.tanh |
+|----|--|--|--|--|--|--|--|--|--|
+| AdadeltaOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| FtrlOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalGradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RMSPropOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdaMaxOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AddSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GGTOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LARSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| NadamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| PowerSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RegAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ShampooOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+
+
+# MsPacman-ram-v0
+| Optimizer  | tf.nn.relu | tf.nn.relu6 | tf.nn.crelu | tf.nn.elu | tf.nn.selu | tf.nn.softplus | tf.nn.softsign | tf.sigmoid | tf.tanh |
+|----|--|--|--|--|--|--|--|--|--|
+| AdadeltaOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| FtrlOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ProximalGradientDescentOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RMSPropOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdaMaxOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AdamWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| AddSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| GGTOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LARSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamGSOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| LazyAdamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| MomentumWOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| NadamOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| PowerSignOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| RegAdagradOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| ShampooOptimizer | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+
+

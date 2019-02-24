@@ -13,7 +13,7 @@ import tensorflow as tf
 if __name__ == '__main__':
      import argparse
      parser = argparse.ArgumentParser()
-     parser.add_argument('--cpu', type=int, default=1)
+     parser.add_argument('--cpu', type=int, default=4)
      parser.add_argument('--num_runs', type=int, default=10)
      # parser.add_argument('--clip_ratio', type=int, )
      args = parser.parse_args()
@@ -33,7 +33,7 @@ if __name__ == '__main__':
           #, 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'
           # , , tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh
 
-     allEnvs = ['BipedalWalkerHardcore-v2', 'LunarLanderContinuous-v2', 'MontezumaRevenge-ram-v0', 'Enduro-ram-v0', 'MsPacman-ram-v0']
+     allEnvs = ['Ant-v2','HumanoidStandup-v2']
      optList = ['AdadeltaOptimizer', 'AdagradOptimizer', 'AdamOptimizer', 'FtrlOptimizer', 'GradientDescentOptimizer', 'MomentumOptimizer', 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer']
      actList = ['tf.nn.relu', 'tf.nn.relu6', 'tf.nn.crelu', 'tf.nn.elu', 'tf.nn.selu', 'tf.nn.softplus', 'tf.nn.softsign', 'tf.sigmoid', 'tf.tanh']
      tfList = [tf.nn.relu, tf.nn.relu6, tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh]
