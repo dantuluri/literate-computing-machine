@@ -18,14 +18,22 @@ if __name__ == '__main__':
      # parser.add_argument('--clip_ratio', type=int, )
      args = parser.parse_args()
 
-     Ant = ExperimentGrid(name='vpg-siete')
+     Ant = ExperimentGrid(name='vpg-ocho')
      Ant.add('env_name', 'Ant-v2', '', True)
      # eg.add('clip_ratio', [0.1,0.2])
      Ant.add('seed', [10*i for i in range(args.num_runs)])
      Ant.add('epochs', 10)
      Ant.add('steps_per_epoch', [4000,100])
-     Ant.add('optimizer',['AdadeltaOptimizer', 'AdagradOptimizer', 'AdamOptimizer', 'FtrlOptimizer', 'GradientDescentOptimizer', 'MomentumOptimizer', 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'])
+     Ant.add('optimizer',['LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'])
      Ant.add('ac_kwargs:hidden_sizes', [(300,), (128,128)], 'hid')
      Ant.add('ac_kwargs:activation', [tf.nn.relu, tf.nn.relu6, tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh], '')
      Ant.run(vpg, num_cpu=args.cpu)
+
+     #GradientDescentOptimizer does not work on either
      
+     # GradientDescentOptimizer does not work with 1 or 2 or 4 CPUs
+
+     # MomentumOptimizer, ProximalAdagradOptimizer, ProximalGradientDescentOptimizer, RMSPropOptimizer, AdamGSOptimizer, AdamWOptimizer, AddSignOptimizer same as GradDescent
+     # GGTOptimizer gives naan
+
+     #'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'])

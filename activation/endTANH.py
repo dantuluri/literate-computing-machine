@@ -26,7 +26,7 @@ if __name__ == '__main__':
      Enduro.add('steps_per_epoch', [4000,100])
      Enduro.add('optimizer',['GradientDescentOptimizer', 'MomentumOptimizer', 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'])
      Enduro.add('ac_kwargs:hidden_sizes', [(32,), (64,64)], 'hid')
-     Enduro.add('ac_kwargs:activation', [tf.nn.relu], '')
+     Enduro.add('ac_kwargs:activation', [tf.nn.tanh], '')
      Enduro.run(vpg, num_cpu=args.cpu)
      #, 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'
-     # , tf.nn.relu6, tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh
+     # , , , , tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh

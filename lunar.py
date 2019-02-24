@@ -24,7 +24,7 @@ if __name__ == '__main__':
      LunarLanderContinuous.add('seed', [10*i for i in range(args.num_runs)])
      LunarLanderContinuous.add('epochs', 10)
      LunarLanderContinuous.add('steps_per_epoch', [4000,100])
-     LunarLanderContinuous.add('optimizer',['LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'])
+     LunarLanderContinuous.add('optimizer',['NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'])
      LunarLanderContinuous.add('ac_kwargs:hidden_sizes', [(32,), (64,64)], 'hid')
      LunarLanderContinuous.add('ac_kwargs:activation', [tf.nn.relu, tf.nn.relu6, tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh], '')
      LunarLanderContinuous.run(vpg, num_cpu=args.cpu)
