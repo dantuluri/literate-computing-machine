@@ -19,7 +19,7 @@ if __name__ == '__main__':
      args = parser.parse_args()
 
      def runExperiment(someEnv,someOptimizer, someActivation):
-          env = ExperimentGrid(name='vpg-once')
+          env = ExperimentGrid(name='vpg-trece')
           env.add('env_name', someEnv, '', True)
            # eg.add('clip_ratio', [0.1,0.2])
           env.add('seed', [10*i for i in range(args.num_runs)])
@@ -33,7 +33,7 @@ if __name__ == '__main__':
           #, 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer'
           # , , tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh
 
-     allEnvs = ['Ant-v2','HumanoidStandup-v2']
+     allEnvs = ['HalfCheetah-v2','Hopper-v2','HumanoidStandup-v2','InvertedDoublePendulum-v2','InvertedPendulum-v2','Reacher-v2','Swimmer-v2']
      optList = ['AdadeltaOptimizer', 'AdagradOptimizer', 'AdamOptimizer', 'FtrlOptimizer', 'GradientDescentOptimizer', 'MomentumOptimizer', 'ProximalAdagradOptimizer', 'ProximalGradientDescentOptimizer', 'RMSPropOptimizer', 'AdaMaxOptimizer', 'AdamGSOptimizer', 'AdamWOptimizer', 'AddSignOptimizer', 'GGTOptimizer', 'LARSOptimizer', 'LazyAdamGSOptimizer', 'LazyAdamOptimizer', 'MomentumWOptimizer', 'NadamOptimizer', 'PowerSignOptimizer', 'RegAdagradOptimizer', 'ShampooOptimizer']
      actList = ['tf.nn.relu', 'tf.nn.relu6', 'tf.nn.crelu', 'tf.nn.elu', 'tf.nn.selu', 'tf.nn.softplus', 'tf.nn.softsign', 'tf.sigmoid', 'tf.tanh']
      tfList = [tf.nn.relu, tf.nn.relu6, tf.nn.crelu, tf.nn.elu, tf.nn.selu, tf.nn.softplus, tf.nn.softsign, tf.sigmoid, tf.tanh]
